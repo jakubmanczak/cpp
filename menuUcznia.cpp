@@ -7,7 +7,7 @@ int main()
   int num;
   time_t czas;
   time(&czas);
-  
+
   int oceny[] = {5,4};
 
   start:
@@ -21,7 +21,7 @@ int main()
     default:
     cout << "---------------------------" << endl;
     cout << "---------------------------" << endl;
-    cout << "-------SPRAWDZANIE---------" << endl;
+    cout << "--------SPRAWDZANIE--------" << endl;
     cout << "---------------------------" << endl;
     cout << "---------------------------" << endl;
       // PODAWANIE LICZBY
@@ -35,7 +35,7 @@ int main()
         goto start;
       }
       // PODAWANIE CZASU
-      cout << "Jest teraz " << ctime(&czas) << endl;
+      cout << "Jest teraz " << ctime(&czas);
       break;
     }
   cout << "---------------" << endl;
