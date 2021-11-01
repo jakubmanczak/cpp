@@ -10,11 +10,10 @@ int main(){
   cin >> user;
   cout << "password: ";
   cin >> passw;
-  if(user == user1 && passw == passw1){
-    cout << "LOGIN// Logged in successfully.";
-  }else{
-    cout << "LOGIN// Incorrect credentials.";
-  }
+
+  user == user1 && passw == passw1
+    ? cout << "LOGIN// Logged in successfully."
+    : cout << "LOGIN// Incorrect credentials.";
 
   return 0;
 }
