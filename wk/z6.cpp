@@ -25,4 +25,5 @@ int main(){
   }else{
     cout << "zly operator";
   }
+  return 0;
 }

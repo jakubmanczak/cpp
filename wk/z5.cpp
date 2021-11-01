@@ -18,7 +18,7 @@ int main(){
   }
   if(wiek1 > 100 && wiek2 > 100){
     cout << "\nobie osoby maja ponad 100 lat";
-    cout << "\to calkiem sporo lat";
+    cout << "\nto calkiem sporo lat";
   }
   
   return 0;

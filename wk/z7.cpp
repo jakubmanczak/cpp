@@ -32,4 +32,5 @@ int main(){
       cout << "zly operator";
       break;
   }
+  return 0;
 }
