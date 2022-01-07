@@ -1,1 +1,0 @@
-zapis danych użytkowników w bazie danych lub chociażby w osobnym pliku i wczytywanie tych danych stamtąd
