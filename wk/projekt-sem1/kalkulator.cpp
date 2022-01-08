@@ -25,7 +25,6 @@ int main(){
     cout << "Możliwe operacje: +, -, *, /, ^, s, q" << endl;
     cout << "Wybierz operację: "; cin >> uOperation;
     if(uOperation == 'q') break;
-    // maybe use string instead and split it into operator and operationNum ?
     if(uOperation != 's'){
       cout << "Podaj liczbę do zastosowania w operacji: "; cin >> uOperationNumber;
     }
@@ -41,6 +40,7 @@ int main(){
       cout << "Nie ma takiej operacji." << endl;
       break;
     }
+    printf("\033c");
   }
   return 0;
 }
