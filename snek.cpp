@@ -10,7 +10,8 @@ struct point{
 
 struct snake{
 	point head;
-	int length;
+	point previous[64];
+	int bodylength = 0;
 };
 
 struct screen{
@@ -113,6 +114,7 @@ int main(){
 
 		if( snek.head.x == scoreup.x && snek.head.y == scoreup.y ){
 			score += 1;
+			snek.bodylength += 1;
 			scoreup.x = generateRandomNumber(0, 63);
 			scoreup.y = generateRandomNumber(0, 15);
 		}
@@ -123,6 +125,9 @@ int main(){
 		std::cout << "Score: " << score << ". " << "Use the WASD keys to move around. Input: ";// << std::endl;
 		// std::cout << inputmessage << std::endl;
 		// inputmessage = "";
+
+		// debug couts
+		// std::cout << "\nLength: " << snek.bodylength << std::endl;
 		
 		std::cin >> input;
 		switch(input){
